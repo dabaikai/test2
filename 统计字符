@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	char ch;
+    int a=0,b=0,c=0,d=0,e;
+    while((ch=getchar())!='\n')
+	{
+     if(ch>='A'&&ch<='Z'||ch>='a'&&ch<='z')//判断有多少字母。
+     a++;
+     else if(ch>='0'&&ch<='9')//判断有多少数字
+     b++;
+     else if(ch==' ')//判断空格
+     c++;
+     else 
+     d++;
+	 e=a+b+c+d;
+	}
+	printf("一共有%d个字符\n",e);
+	printf("字母=%d\n数字=%d\n空格=%d\n其他字符=%d\n",a,b,c,d);
+return 0;
+}
